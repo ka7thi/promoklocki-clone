@@ -1,11 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  font-size: 10px;
-  font-family: "roboto";
-}
-
 .header {
   width: 100%;
   padding: 10px 0;
@@ -54,5 +47,135 @@
 .header .header-wrapper .header-subtitle {
   font-size: 1.4rem;
   color: black;
+}
+
+.nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 40px;
+}
+
+.nav-list .nav-list-item {
+  list-style: none;
+}
+
+.nav-list .nav-list-item .nav-list-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  text-decoration: none;
+}
+
+.nav-list .nav-list-item .nav-list-link svg {
+  width: 20px;
+  height: 20px;
+}
+
+.nav-list .nav-list-item .nav-list-link svg path {
+  stroke: black;
+  stroke-width: 2px;
+}
+
+.nav-list .nav-list-item .nav-list-link .nav-list-text {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.nav-list .nav-list-item .nav-list-link:hover {
+  color: #225b9c;
+}
+
+.nav-list .nav-list-item:nth-child(5) path {
+  stroke-width: 6px !important;
+}
+
+.search-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px;
+  height: 40px;
+}
+
+.search-form .search-input {
+  font-size: 20px;
+  width: 100%;
+  padding-left: 10px;
+  border: solid #d6d6d6 1px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.search-form .search-input::-webkit-input-placeholder {
+  color: #969696;
+}
+
+.search-form .search-input:-ms-input-placeholder {
+  color: #969696;
+}
+
+.search-form .search-input::-ms-input-placeholder {
+  color: #969696;
+}
+
+.search-form .search-input::placeholder {
+  color: #969696;
+}
+
+.search-form .search-input:focus {
+  -webkit-box-shadow: 0 0 0 5px #66baff;
+          box-shadow: 0 0 0 5px #66baff;
+  outline: none;
+}
+
+.search-form .search-button {
+  width: 40px;
+  height: 40px;
+  background-color: #ff5e00;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.search-form .search-button svg {
+  width: 20px;
+  height: 20px;
+}
+
+.search-form .search-button svg path {
+  stroke: white;
+  stroke-width: 3px;
+}
+
+.search-form .search-button:hover {
+  background-color: #2266ce;
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  font-family: "roboto";
 }
 /*# sourceMappingURL=style.css.map */
