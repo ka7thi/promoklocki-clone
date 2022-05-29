@@ -7,39 +7,4 @@
     font-family: "roboto";
 }
 
-.header {
-    width: 100%;
-    padding: 10px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    .header-wrapper {
-        text-decoration: none;
-        color: black;
-        .header-title {
-            font-size: 4rem;
-            .header-o-letter {
-                display: inline-block;
-                box-sizing: border-box;
-                width: 2.2em;
-                height: 2.2rem;
-                border-radius: 50%;
-                background-color: red;
-                border: 0.4rem solid rgb(255, 105, 105); 
-            }
-            .header-o-letter:nth-child(2) {
-                background-color: green;
-                border: 0.4rem solid rgb(70, 167, 70);
-            }
-            .header-o-letter:nth-child(3) {
-                background-color: blue;
-                border: 0.4rem solid rgb(105, 105, 255);
-            }
-        }
-        .header-subtitle {
-            font-size: 1.4rem;
-            color: black;
-        }
-    }
-    
-}
+@import "./header"
