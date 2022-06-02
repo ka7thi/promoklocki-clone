@@ -9,3 +9,27 @@
     font-size: 10px;
     font-family: "roboto";
 }
+
+.info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .info-text {
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: rgb(34, 91, 156);
+        &:hover {
+            color: rgb(152, 195, 245);
+        }
+    }
+    .info-icon {
+        width: 18px;
+        height: 18px;
+        path {
+            stroke-width: 5px;
+            fill: red;
+            stroke: black
+        }
+    }
+}
