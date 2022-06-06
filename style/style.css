@@ -286,6 +286,75 @@
   stroke: black;
 }
 
+.main-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.main-content .filter {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 0;
+}
+
+.main-content .filter .filter-category-wrapper, .main-content .filter .filter-sort-wrapper {
+  margin: 0 10px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-content .filter .filter-category-wrapper .filter-category-label, .main-content .filter .filter-category-wrapper .filter-sort-label, .main-content .filter .filter-sort-wrapper .filter-category-label, .main-content .filter .filter-sort-wrapper .filter-sort-label {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.main-content .filter .filter-category-wrapper .filter-category-select, .main-content .filter .filter-category-wrapper .filter-sort-select, .main-content .filter .filter-sort-wrapper .filter-category-select, .main-content .filter .filter-sort-wrapper .filter-sort-select {
+  font-size: 1.3rem;
+  padding: 5px;
+  border: 1px solid #c6dcf5;
+}
+
+.main-content .filter .filter-sort-settings {
+  margin: 0 10px;
+  width: 24px;
+  height: 24px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+
+.main-content .filter .filter-sort-settings:hover {
+  cursor: pointer;
+}
+
+.main-content .filter .filter-sort-settings path {
+  stroke-width: 5px;
+  stroke: black;
+}
+
 * {
   margin: 0;
   padding: 0;
