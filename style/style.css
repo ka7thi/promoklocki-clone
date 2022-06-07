@@ -355,6 +355,90 @@
   stroke: black;
 }
 
+.main-content .products-list {
+  width: 100%;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-content .products-list .products-list-item {
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  border-top: 1px solid #c6dcf5;
+  padding: 10px 2.5%;
+}
+
+.main-content .products-list .products-list-item:hover {
+  background-color: #f7f7f7;
+}
+
+.main-content .products-list .products-list-item .products-content-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-content .products-list .products-list-item .products-content-wrapper .products-img {
+  width: 100px;
+  max-height: 100px;
+}
+
+.main-content .products-list .products-list-item .products-content-wrapper .products-name {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-left: 30px;
+  color: #225b9c;
+}
+
+.main-content .products-list .products-list-item .products-content-wrapper .products-name:hover {
+  color: #98c3f5;
+}
+
+.main-content .products-list .products-list-item .products-button {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #225b9c;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  width: 30%;
+  padding: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main-content .products-list .products-list-item .products-button:hover {
+  color: #FFF;
+  background-color: #225b9c;
+  cursor: pointer;
+}
+
+.main-content .products-list .products-list-item .products-button .products-price {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
 * {
   margin: 0;
   padding: 0;
