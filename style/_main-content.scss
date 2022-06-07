@@ -9,6 +9,7 @@
         align-items: center;
         justify-content: space-between;
         padding: 10px 0;
+        background-color: white;
         .filter-category-wrapper, .filter-sort-wrapper {
             margin: 0 10px;
             width: 100%;
@@ -45,6 +46,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        background-color: white;
         .products-list-item {
             width: 95%;
             display: flex;
@@ -52,6 +54,7 @@
             align-items: flex-end;
             border-top: 1px solid rgb(198, 220, 245);
             padding: 10px 2.5%;
+            background-color: white;
             &:hover {
                 background-color: rgb(247, 247, 247);
             }

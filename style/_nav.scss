@@ -2,7 +2,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 40px;
+    padding: 0 40px;
+    background-color: white;
     .nav-list-item {
         list-style: none;
         .nav-list-link {
@@ -36,8 +37,9 @@
 .search-form {
     display: flex;
     justify-content: center;
-    margin: 10px;
+    padding: 10px;
     height: 40px;
+    background-color: white;
     .search-input {
         font-size: 20px;
         width: 100%;

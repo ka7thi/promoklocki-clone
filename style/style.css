@@ -12,6 +12,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: white;
 }
 
 .header .header-wrapper {
@@ -69,7 +70,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 40px;
+  padding: 0 40px;
+  background-color: white;
 }
 
 .nav-list .nav-list-item {
@@ -121,8 +123,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 10px;
+  padding: 10px;
   height: 40px;
+  background-color: white;
 }
 
 .search-form .search-input {
@@ -261,6 +264,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: white;
 }
 
 .info .info-text {
@@ -313,6 +317,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 10px 0;
+  background-color: white;
 }
 
 .main-content .filter .filter-category-wrapper, .main-content .filter .filter-sort-wrapper {
@@ -368,6 +373,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: white;
 }
 
 .main-content .products-list .products-list-item {
@@ -384,6 +390,7 @@
           align-items: flex-end;
   border-top: 1px solid #c6dcf5;
   padding: 10px 2.5%;
+  background-color: white;
 }
 
 .main-content .products-list .products-list-item:hover {
@@ -444,5 +451,77 @@
   padding: 0;
   font-size: 10px;
   font-family: "roboto";
+}
+
+body {
+  background-color: #e5ecf0;
+}
+
+.pagination {
+  width: 100%;
+  padding: 10px 0;
+  margin: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+}
+
+.pagination svg {
+  width: 36px;
+  height: 36px;
+}
+
+.pagination svg path {
+  stroke: #225b9c;
+  stroke-width: 2px;
+}
+
+.pagination svg:hover path {
+  stroke: #FFF;
+  stroke-width: 3px;
+}
+
+.pagination .pagination-page-list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pagination .pagination-page-list .pagination-page-list-button {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.pagination button {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #c6dcf5;
+  color: #225b9c;
+}
+
+.pagination button:hover {
+  color: #FFF;
+  background-color: #225b9c;
+  cursor: pointer;
+}
+
+.pagination .pagination-first-button, .pagination .pagination-prev-button {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.pagination .pagination-last-button, .pagination .pagination-next-button {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 /*# sourceMappingURL=style.css.map */
