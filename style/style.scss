@@ -6,6 +6,7 @@
 @import "./info";
 @import "./main-content";
 @import "./pagination";
+@import "./footer";
 
 * {
     margin: 0;
@@ -17,35 +18,4 @@
 
 body {
     background-color: rgb(229, 236, 240);
-}
-
-.footer {
-    width: calc(100%-20px);
-    background: white;
-    padding: 10px;
-    .footer-list-wrapper {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        .footer-list {
-            width: 50%;
-            list-style: none;
-            .footer-list-item {
-                font-size: 1.5rem;
-                margin: 5px 0;
-                a {
-                    font-size: 1.5rem;
-                    text-decoration: none;
-                    color: rgb(34, 91, 156);
-                    &:hover {
-                        color: rgb(152, 195, 245);
-                    }
-                }
-                &:first-child {
-                    font-weight: 600;
-                }
-            }
-        }
-    } 
 }
