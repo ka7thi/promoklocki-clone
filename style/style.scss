@@ -5,6 +5,7 @@
 @import "./menu";
 @import "./info";
 @import "./main-content";
+@import "./pagination";
 
 * {
     margin: 0;
@@ -18,50 +19,33 @@ body {
     background-color: rgb(229, 236, 240);
 }
 
-.pagination {
-    width: 100%;
-    padding: 10px 0;
-    margin: 10px 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: white;
-    svg {
-        width: 36px;
-        height: 36px;
-        path {
-            stroke: rgb(34, 91, 156);
-            stroke-width: 2px;
-        }
-        &:hover path{
-            stroke: #FFF;
-            stroke-width: 3px;
-        }
-    }
-    .pagination-page-list {
-        list-style: none;
+.footer {
+    width: calc(100%-20px);
+    background: white;
+    padding: 10px;
+    .footer-list-wrapper {
         display: flex;
-        .pagination-page-list-button {
-            font-size: 1.5rem;
-            font-weight: 600;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        .footer-list {
+            width: 50%;
+            list-style: none;
+            .footer-list-item {
+                font-size: 1.5rem;
+                margin: 5px 0;
+                a {
+                    font-size: 1.5rem;
+                    text-decoration: none;
+                    color: rgb(34, 91, 156);
+                    &:hover {
+                        color: rgb(152, 195, 245);
+                    }
+                }
+                &:first-child {
+                    font-weight: 600;
+                }
+            }
         }
-    }
-    button {
-        width: 40px;
-        height: 40px;  
-        background-color: rgba(0, 0, 0, 0);
-        border: 1px solid rgb(198, 220, 245);
-        color: rgb(34, 91, 156);
-        &:hover {
-            color: #FFF;
-            background-color: rgb(34, 91, 156);
-            cursor: pointer;
-        }
-    }
-    .pagination-first-button, .pagination-prev-button {
-        transform: rotate(-90deg);
-    }
-    .pagination-last-button, .pagination-next-button {
-        transform: rotate(90deg);
-    }
+    } 
 }
