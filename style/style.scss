@@ -18,4 +18,45 @@
 
 body {
     background-color: rgb(229, 236, 240);
+    // max-width: 560px;
 }
+
+.header-elements-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 570px) {
+    
+  }
+
+  .main-wrapper {
+      max-width: 560px;
+      margin: 0 auto;
+      padding: 0 10px 10px 10px;
+      background-color: rgb(229, 236, 240);
+  }
+
+  @media only screen and (min-width: 770px) {
+    .main-wrapper {
+        max-width: 760px;
+    }
+    .products-description {
+        display: block !important;
+    }
+    .filter-sort-settings {
+        margin: 0 10px 0 30% !important;
+    }
+  }
+
+  @media only screen and (min-width: 1000px) {
+    .main-wrapper {
+        max-width: 990px;
+    }
+    .products-description {
+        display: block !important;
+    }
+    .filter-sort-settings {
+        margin: 0 10px 0 50% !important;
+    }
+  }

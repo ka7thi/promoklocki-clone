@@ -1,9 +1,17 @@
+.nav {
+    width: 100%;
+    background-color: white;
+    order: 2;
+}
+
 .nav-list {
+    max-width: 560px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 40px;
     background-color: white;
+    margin: 0 auto;
     .nav-list-item {
         list-style: none;
         .nav-list-link {
@@ -35,6 +43,7 @@
 }
 
 .search-form {
+    order: 3;
     display: flex;
     justify-content: center;
     padding: 10px;
